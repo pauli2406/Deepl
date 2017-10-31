@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Deepl Übersetzer</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/index.css"/>
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+                <h1>
+                    Deepl Translator
+                </h1>
+            </div>
+            <div data-role="main" class="ui-content">
+                <label for="inputTa">Ausgangstext:</label>
+                <textarea rows="5" cols="5" id="inputTa"></textarea>
+                <label for="fromLangCb">Ausgangssprache: </label>
+                <div id="fromLangCb">
+                    <select id="selFrom">
+                        <option value="auto">automatische Spracherkennung:</option>
+                        <option value="DE">Deutsch</option>
+                        <option value="EN">Englisch</option>
+                        <option value="FR">Französisch</option>
+                        <option value="ES">Spanisch</option>
+                        <option value="IT">Italienisch</option>
+                        <option value="NL">Niederländisch</option>
+                        <option value="PL">Polnisch</option>
+                    </select>
+                </div>
+
+                <label for="toLangCb">Zielsprache: </label>
+                <div id="toLangCb">
+                    <select id="selTo">
+                        <option value="DE">Deutsch</option>
+                        <option selected value="EN">Englisch</option>
+                        <option value="FR">Französisch</option>
+                        <option value="ES">Spanisch</option>
+                        <option value="IT">Italienisch</option>
+                        <option value="NL">Niederländisch</option>
+                        <option value="PL">Polnisch</option>
+                    </select>
+                </div>
+                <button id="btnTrans">Translate</button>
+                <p></p>
+                <label for="resultTa"> Ergebnis:</label>
+                <textarea rows="5" id="resultTa" readonly></textarea>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </body>
+</html>
